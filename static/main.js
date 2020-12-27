@@ -6,7 +6,7 @@ let search_list = '';
 let search_results_data = '';
 
 function searchMovie(movie_name) {
-    axios.get(search_url + movie_name)
+    axios.get(search_url + movie_name + '&type=movie')
         .then(function (response) {
             search_results_data = response.data.Search;
             console.log(search_results_data);
