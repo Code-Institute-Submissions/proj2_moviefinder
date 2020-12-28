@@ -1,8 +1,8 @@
 ## Overview
 
-![Mockup](https://raw.githubusercontent.com/edmundgjj/proj2_moviefinder/master/static/FilmerooMockup.png)
+![Mockup](https://i.imgur.com/FdsaXKf.png)
 
-Filmeroo is a lightweight movie search engine that allows the user to find movies based on titles and if they want to learn more about them, a link is provided to redirect them to the film's respective IMDB page. 
+Filmeroo is a lightweight movie search engine that allows the user to find movies based on titles and get key information about the film like rating, awards, director at a glance. In addition, if they want to explore further, a link is provided to redirect them to the film's respective IMDB page. 
 
 This website is designed with responsive use in mind and is optimised for both mobile and desktop usage. 
 
@@ -17,13 +17,14 @@ You can find the wireframe here on Figma - [link](https://www.figma.com/file/5Qk
 
 It is located in a position that makes it for the user to find and return to if they want to repeat a search. 
 
-Using dark purple as a the primary color it provides a good backdrop that allows the movie poster to stand out and the contrasting bright orange accentuates the call-to-action button for performing a search and getting more details of the movie. 
+Using dark purple as a the primary color it provides a good backdrop that allows the movie poster to stand out. Using the bright orange for the search call-to-aciton brings attention to the user immediately. 
+By using the brand color of yellow and grew for the view on IMDB button, it provides more context on the functionality of the button.  
 
 To make the movie poster stand out even further, I chose to use black on the card that the movie poster is displayed on. 
 
-By showing only three movie posters on desktop version, it helps user to scan the information more easily without being bombarded by too many options at once. 
+By showing only two movie posters on desktop version, it helps user to scan the information more easily without being bombarded by too many information at once. 
 
-On mobile, one movie is shown in a row and optimised for a scrolling behavior. 
+On mobile, one movie is shown in each row and optimised for the mobile scrolling behavior and ensure readability as well. 
 
 
 ### User Stories & Scenarios
@@ -32,6 +33,8 @@ On mobile, one movie is shown in a row and optimised for a scrolling behavior.
 2. When I want to find out more about the movie, I can click on the "Movie Button" and it will direct me to the movie's IMDB page on a new window. 
 3. When I perform a search with no value inserted into the search form, I will see an error message that asks me to enter a value into the search form. 
 4. When I perform a search with less than 3 characters, I am not able to do the search and will be asked to input a value with more than 3 characters or more. 
+5. When I perform a search which returns no results, I am informed that no movies with the title can be found. 
+6. On the search results, I can find the information of the name, director, IMDB rating, awards information, release year and plot summary of the movie.
 
 
 ## Testing 
@@ -41,10 +44,9 @@ I checked for both the responsiveness of the website on these devices and also t
 The test cases can be found [here](https://docs.google.com/spreadsheets/d/1Qvv28y-rBKN6dQ5ZqUDT1VtdSd5hFcgNdNxFRSfqgXY/edit?usp=sharing).
 
 ## Future Improvements 
-
-* Display the ratings of the movies upfront 
-* Allow the users to search based on year and director 
-* Allow users to download the movie posters easily via a click
+* Add a loading state when the search results is loading. 
+* Allow users to sort and filter the search by year and ratings. 
+* Allow users to view the Top 100 movies by year. 
 
 ## Technology 
 * HTML5
