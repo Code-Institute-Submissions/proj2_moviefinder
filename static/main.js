@@ -28,17 +28,27 @@ $(function () {
                                 movie_score = response.data.imdbRating;
                                 console.log(i);
 
-                                search_list += `<div class="card col-sm-12 col-md-4 col-lg-3">
-    <div class="card-header text-center font-weight-bold">${response.data.Title} | ${response.data.Year} </div>
-    <img class="card-img" src="${response.data.Poster}" alt="Movie Poster of ${response.data.Title}">
-    <div class="card-body text-center">
-    <p><i class = "fas fa-star"></i>${movie_score}</p>
-    <p>${response.data.Plot}</p>
-    </div>
-    <div class="card-footer text-center">
-    <a class="btn btn-primary" href="https://www.imdb.com/title/${response.data.imdbID}/" role="button" target="_blank">View Movie</a>
-    </div>
-    </div>`;
+                                search_list +=
+                                    `<div class="col-lg-6 col-md-12" >
+                                    <div style="border:10px solid #0a1045;border-radius: 20px; background-color:black; padding:1rem;">
+                                    <div class="row">
+                                    <div class="col-4"><img class="img-fluid rounded" src="${response.data.Poster}" alt="Movie Poster of ${response.data.Title}"></div>
+                                    <div class="col-8">
+                                    <div style="height:5px;"></div>
+                                    <h2>${response.data.Title}</h2>
+                                    <h4>${response.data.Year} </h4>
+                                    <div>
+                                    <p><i class = "fas fa-star"></i>${movie_score}</p>
+                                    <p>${response.data.Plot}</p>
+                                    </div>
+    
+                                    <a class="btn btn-primary" href="https://www.imdb.com/title/${response.data.imdbID}/" role="button" target="_blank">View Movie</a>
+                                    </div>
+                                    </div>
+                                    
+                                                    
+                        
+                        </div></div>`;
 
                                 $("#cardList").html(search_list);
 
