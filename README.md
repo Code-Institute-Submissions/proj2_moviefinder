@@ -1,45 +1,70 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+## Overview
 
-Welcome edmundgjj,
+![Mockup](https://raw.githubusercontent.com/edmundgjj/proj2_moviefinder/master/static/FilmerooMockup.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Filmeroo is a lightweight movie search engine that allows the user to find movies based on titles and if they want to learn more about them, a link is provided to redirect them to the film's respective IMDB page. 
 
-## Gitpod Reminders
+This website is designed with responsive use in mind and is optimised for both mobile and desktop usage. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The live website can be viewed [here](https://edmundgjj.github.io/proj2_moviefinder/)
 
-`python3 -m http.server`
+## UX and UI
 
-A blue button should appear to click: *Make Public*,
+### User Interface 
 
-Another blue button should appear to click: *Open Browser*.
+Before developing the page, I created a wireframe to help me visualise how the website should look and work. With a simple Single Page layout, the user's attention is drawn to the search input field and button in the middle of the page. 
+You can find the wireframe here on Figma - [link](https://www.figma.com/file/5QkwPPvtJzgaoGy7RYexSo/Movie-Finder-Project-Two?node-id=0%3A1)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+It is located in a position that makes it for the user to find and return to if they want to repeat a search. 
 
-A blue button should appear to click: *Make Public*,
+Using dark purple as a the primary color it provides a good backdrop that allows the movie poster to stand out and the contrasting bright orange accentuates the call-to-action button for performing a search and getting more details of the movie. 
 
-Another blue button should appear to click: *Open Browser*.
+To make the movie poster stand out even further, I chose to use black on the card that the movie poster is displayed on. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+By showing only three movie posters on desktop version, it helps user to scan the information more easily without being bombarded by too many options at once. 
 
-## Updates Since The Instructional Video
+On mobile, one movie is shown in a row and optimised for a scrolling behavior. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### User Stories & Scenarios
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. When looking for a movie, I can search a word that belongs to the movie title to find movies with title that contains the word. The user will see a list of movies with their posters and title based on the search results. 
+2. When I want to find out more about the movie, I can click on the "Movie Button" and it will direct me to the movie's IMDB page on a new window. 
+3. When I perform a search with no value inserted into the search form, I will see an error message that asks me to enter a value into the search form. 
+4. When I perform a search with less than 3 characters, I am not able to do the search and will be asked to input a value with more than 3 characters or more. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Testing 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Manual testing is conducted on three devices available to me - Macbook Pro 16 Inch, tested on chrome and safari, iOS on Iphone 11 Pro Mas on Safari and Android 11 on Galaxy S10e on Chrome. 
+I checked for both the responsiveness of the website on these devices and also the functionality using the test cases I created to cover the end to end user experience of the website. 
+The test cases can be found [here](https://docs.google.com/spreadsheets/d/1Qvv28y-rBKN6dQ5ZqUDT1VtdSd5hFcgNdNxFRSfqgXY/edit?usp=sharing).
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Future Improvements 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Display the ratings of the movies upfront 
+* Allow the users to search based on year and director 
+* Allow users to download the movie posters easily via a click
 
---------
+## Technology 
+* HTML5
+* CSS3
+* JavaScript
+* JQuery
+* [Axios](https://www.npmjs.com/package/axios) 
+* [Gitpod](https://gitpod.io/workspaces/)
+    * Used as the IDE to write the codes for this website   
+* [Bootstrap 4 framework](https://getbootstrap.com/)
+* [Git](https://git-scm.com/)
+    * Used for version control to commit to Github
+* [Github](https://github.com)
+* [W3C Markup Validation service](## )
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
-Happy coding!
+## Deployment 
+*This website is deployed using Github pages. 
+
+## Credit 
+*Open Movies Database [API](http://www.omdbapi.com/)
+
+This site is created solely for educational purposes.
