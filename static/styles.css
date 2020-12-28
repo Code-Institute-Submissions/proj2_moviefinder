@@ -9,13 +9,6 @@ body {
     border-color: #0a1045;
 }
 
-.movie-card {
-    background-color: black;
-    border-radius: 5px;
-    border-color: white;
-    border-width: 2px;
-}
-
 .navbar {
     background-color: #8e61e2;
     color: white;
