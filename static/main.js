@@ -35,14 +35,16 @@ $(function () {
                                     <div class="col-4"><img class="img-fluid rounded" src="${response.data.Poster}" alt="Movie Poster of ${response.data.Title}"></div>
                                     <div class="col-8">
                                     <div style="height:5px;"></div>
-                                    <h2>${response.data.Title}</h2>
+                                    <h2>${response.data.Title}</h2> 
+                                    <p>by ${response.data.Director}</p>
                                     <h4>${response.data.Year} </h4>
                                     <div>
-                                    <p><i class = "fas fa-star"></i>${movie_score}</p>
+                                    <p style="color:yellow;"><i class = "fas fa-star"></i><span style="font-size: larger;"> ${movie_score}</span> | <em>${response.data.Awards}</em></p>
                                     <p>${response.data.Plot}</p>
+                                    
                                     </div>
     
-                                    <a class="btn btn-primary" href="https://www.imdb.com/title/${response.data.imdbID}/" role="button" target="_blank">View Movie</a>
+                                    <a class="btn btn-warning" href="https://www.imdb.com/title/${response.data.imdbID}/" role="button" target="_blank">View on IMDB</a>
                                     </div>
                                     </div>
                                     
