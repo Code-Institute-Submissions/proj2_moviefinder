@@ -34,7 +34,7 @@ function searchMovie(movie_name) {
         };
 
 $("#submitMovieName").click(function () {
-    if ($("#movieNameInput").val()) {
+    if ($("#movieNameInput").val().length >= 3) {
         // Function to search movies
         $('#message').html("");
         search_input = $("#movieNameInput").val();
@@ -44,7 +44,12 @@ $("#submitMovieName").click(function () {
             createMovieCard(search_results_data[i]);
         };
         $('#info-banner').html("");
-    } else {
+
+    } else if ($("#movieNameInput").val().length > 0 && $("#movieNameInput").val().length < 3) {
+        $('#message').html("Please insert 3 characters or more.")
+    }
+    
+    else {
         $('#message').html("Please enter a movie name.")
     }
 
